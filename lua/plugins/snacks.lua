@@ -11,6 +11,11 @@ return {
           ignored = true,
           exclude = { "node_modules", ".git" },
         },
+        recent = {
+          filter = {
+            paths = false,
+          },
+        },
       },
     },
   },
