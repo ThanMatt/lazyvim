@@ -117,9 +117,9 @@ return {
           math.randomseed(os.time())
           local random_quote = quotes[math.random(#quotes)]
           return {
-            "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
-            "",
             random_quote,
+            "",
+            "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
           }
         end,
       },
