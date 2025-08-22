@@ -3,11 +3,18 @@ return {
   opts = {
     highlight = {
       backdrop = false,
+      matches = true,
+      priority = 5000,
       groups = {
         match = "FlashMatch",
         current = "FlashCurrent", 
         backdrop = "FlashBackdrop",
         label = "FlashLabel",
+      },
+    },
+    modes = {
+      char = {
+        highlight = { backdrop = false },
       },
     },
   },
@@ -37,6 +44,12 @@ return {
       bg = "NONE", 
       fg = "NONE",
       sp = "#ffff00", -- underline color (bright yellow)
+    })
+    
+    -- Ensure backdrop is completely transparent
+    vim.api.nvim_set_hl(0, "FlashBackdrop", {
+      bg = "NONE",
+      fg = "NONE",
     })
   end,
 }
