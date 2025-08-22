@@ -1,0 +1,14 @@
+{
+  "name": "MyApp",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^17.0.0",
+    "lodash": "^4.17.21",
+    "axios": "^0.24.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "build": "webpack"
+  }
+}
