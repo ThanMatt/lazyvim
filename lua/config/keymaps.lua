@@ -20,3 +20,6 @@ vim.keymap.set('n', '<leader>fP', function()
   vim.fn.setreg("+", fullpath)
   vim.notify("📋 Copied full path: " .. fullpath, vim.log.levels.INFO)
 end, { desc = 'Copy file path (absolute)' })
+
+-- Map <leader><leader> to telescope git files
+vim.keymap.set('n', '<leader><leader>', '<cmd>Telescope git_files<cr>', { desc = 'Find git files' })
