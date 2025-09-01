@@ -3,3 +3,7 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 vim.opt.wrap = true
+
+-- Use indent-based folding for more granular control
+-- vim.opt.foldmethod = "indent"
+-- vim.opt.foldlevelstart = 99  -- Start with all folds open

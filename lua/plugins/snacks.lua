@@ -3,6 +3,7 @@ return {
   opts = {
     dashboard = { enabled = false },
     notifier = { enabled = true },
+    indent = { enabled = false },
     scratch = {
       enabled = true,
       ft = "markdown", -- default filetype

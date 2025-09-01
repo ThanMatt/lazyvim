@@ -23,3 +23,11 @@ end, { desc = 'Copy file path (absolute)' })
 
 -- Map <leader><leader> to telescope git files
 vim.keymap.set('n', '<leader><leader>', '<cmd>Telescope git_files<cr>', { desc = 'Find git files' })
+
+-- Map tab to toggle fold (like emacs + evil mode)
+vim.keymap.set('n', '<Tab>', 'za', { desc = 'Toggle fold' })
+
+-- Restore default H/L behavior (overrides LazyVim buffer switching)
+vim.keymap.set('n', 'H', 'H', { desc = 'Move cursor to top of screen' })
+vim.keymap.set('n', 'L', 'L', { desc = 'Move cursor to bottom of screen' })
+
