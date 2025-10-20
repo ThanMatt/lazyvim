@@ -1,0 +1,10 @@
+[2023-01-15 10:23:45] INFO: Server started on port 8080
+[2023-01-15 10:24:12] INFO: Database connection established
+[2023-01-15 10:25:33] WARNING: High memory usage detected
+[2023-01-15 10:26:01] ERROR: Failed to connect to external API
+[2023-01-15 10:27:22] INFO: User authentication successful
+[2023-01-15 10:28:45] CRITICAL: Database connection lost
+[2023-01-15 10:29:10] ERROR: Request timeout after 30 seconds
+[2023-01-15 10:30:05] INFO: Cache cleared successfully
+[2023-01-15 10:31:18] CRITICAL: System out of memory
+[2023-01-15 10:32:40] WARNING: Slow query detected

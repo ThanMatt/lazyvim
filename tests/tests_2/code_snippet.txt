@@ -1,0 +1,11 @@
+function calculate() {
+  let x = 10;
+  let y = 20;
+  let z = 30;
+
+  let result = multiply(x, y, z);
+
+  return result;
+}
+
+console.log(calculate());
