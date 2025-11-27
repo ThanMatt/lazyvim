@@ -3,4 +3,7 @@ return {
   opts = {
     inlay_hints = { enabled = false },
   },
+  servers = {
+    sqls = {}
+  }
 }

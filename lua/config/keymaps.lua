@@ -31,3 +31,12 @@ vim.keymap.set('n', '<Tab>', 'za', { desc = 'Toggle fold' })
 vim.keymap.set('n', 'H', 'H', { desc = 'Move cursor to top of screen' })
 vim.keymap.set('n', 'L', 'L', { desc = 'Move cursor to bottom of screen' })
 
+-- :: Save without formatting command
+vim.api.nvim_create_user_command('W', function()
+  local autoformat = vim.g.autoformat
+  vim.g.autoformat = false
+  vim.cmd('write')
+  vim.g.autoformat = autoformat
+  vim.notify("💾 Saved without formatting", vim.log.levels.INFO)
+end, { desc = 'Save without formatting' })
+
