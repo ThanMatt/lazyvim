@@ -31,6 +31,9 @@ vim.keymap.set('n', '<Tab>', 'za', { desc = 'Toggle fold' })
 vim.keymap.set('n', 'H', 'H', { desc = 'Move cursor to top of screen' })
 vim.keymap.set('n', 'L', 'L', { desc = 'Move cursor to bottom of screen' })
 
+-- :: Terminal mode - press Esc twice to navigate terminal with cursor
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Enter normal mode to navigate terminal' })
+
 -- :: Save without formatting command
 vim.api.nvim_create_user_command('W', function()
   local autoformat = vim.g.autoformat

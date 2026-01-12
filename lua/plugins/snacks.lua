@@ -43,4 +43,10 @@ return {
       },
     },
   },
+  -- :: Override default terminal keybindings
+  keys = {
+    { "<C-/>", false }, -- disable default terminal keybinding
+    { "<C-c>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
+    { "<C-c>t", "<cmd>close<cr>", ft = "terminal", desc = "Hide Terminal" },
+  },
 }
